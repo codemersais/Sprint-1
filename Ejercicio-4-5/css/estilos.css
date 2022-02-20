@@ -1,0 +1,219 @@
+*{
+    margin: 0px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+body{
+    max-width:1200px;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+    .header{
+        background-image: url(../img/fons-capçalera.jpg);
+        background-position: center;
+        background-attachment: contain;
+        background: cover;
+        display: flex;
+        flex-flow: column nowrap;
+        height: 400px;
+        
+    }
+        .menu{
+            display: flex;
+                flex-flow: row nowrap;
+                align-items: center;
+            }
+            .nav a{
+                color: grey;
+                font-size: 15px;
+                padding: 0 25px;
+                font-family: 'Open Sans', sans-serif;
+            }
+            .nav a:hover{
+                color: rgba(15, 15, 15, 0.748);
+            }
+            .redes{
+                 flex: 1 1 auto;
+                display: flex;
+                padding-left: 160px;
+            }  
+                .facebook{
+                    margin: 0 -40px 0 0px;
+                }
+                .twiter{
+                    margin: 0 0 0 0px;
+                }  
+            .redes a{
+                color: grey;
+                font-size: 15px;
+                font-family: 'Noto Serif KR', serif;
+            }
+            .redes a:hover{
+                color: rgba(15, 15, 15, 0.748);
+            }
+        .texto-principal{
+            background: #524a4e25;
+            margin-left: 70px;
+            margin-right: 70px;
+            margin-top: 120px;
+            margin-bottom: -10px;
+            flex: auto;
+        }
+            .titulo{
+                color: #f76d11a2;
+                font-size: 25px; 
+                text-align: center;
+                font-family: 'Noto Serif KR', serif;
+            }
+
+
+    .section{
+        display: flex;
+        font-family: 'Open Sans', sans-serif;
+        font-size: 15px;
+    }
+        .img-articulos{
+            width: 100%;
+        }
+        .articulos{
+            background: grey;
+            display: flex;
+            flex-flow: row wrap;
+            margin-right: 10px;
+            margin-left: -10px;
+        }
+        .article{
+            flex: 1 1 40%;
+            border: 6px solid grey;
+            background-color: #f5f3f7;
+            padding: 0 0 10px 0;
+        }
+            h2{
+                background: #FF6464;
+                margin: 0px 10px 0px 10px;
+                color: #ffff;
+            }
+            h3{
+                color: yellow;
+                margin-top: -55px;
+                margin-left: 8px;
+            }
+            .parra-articulo{
+                color: rgba(0, 0, 0, 0.646);
+                margin: 9px;
+                column-count:2;
+                letter-spacing: -9;
+            }
+            .leer{
+                margin-left: 8px;
+                font-size: 15px;
+                color: rgba(128, 128, 128, 0.789);
+            }
+                .article a:hover{
+                    color: rgb(0, 0, 0);
+                }
+        .texto-dos-li{
+            text-align: center;
+        }
+        .titulo-aside{
+            text-align: center;
+        }
+        .parrafo-aside{
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+        .aside{
+            background: grey;
+            flex: 0 0 auto;
+            width: 250px;
+            margin-right: -10px;
+        }
+        .footer{
+        background: grey;
+        padding: 0 10px 0 10px;
+        }
+            .pie{
+                text-align: center;
+                background-color: #f5f3f7;
+            }
+                .movil{
+                    display: none;
+                }
+
+
+@media (max-width: 948px){
+    
+    .nav{
+    flex: 1 1 30%;
+    }
+    .menu{
+        flex-direction: column;
+        flex-wrap: wrap;
+        height: auto;
+        justify-content: center;
+    }
+    .redes{
+        flex: 0 0 auto;
+        flex-wrap: wrap;
+        margin-top: 20px;
+        margin-left: -140px;
+    }
+    .texto-principal{
+        flex-direction: row;
+        height: 300px;
+        margin-top: 0;
+        margin-bottom: 0;
+    }
+    .titulo{
+        font-size: 25px;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .article{
+        flex: 1 1 auto;      
+    }
+    .movil{
+        display: none;
+    }
+}
+
+@media (max-width: 600px){
+
+    .header{
+        width: 475px;
+        background-image: url(../img/fons-capçalera.jpg);
+    }
+    .movil{
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+    }
+    .movil a{
+        margin: 10px;
+        background-color: #f5f3f7db;
+        color: black;
+        font-size: 25px;
+        font-family: 'Open Sans', sans-serif;
+    }
+    .menu{
+        display: none;
+    }
+    .nav{
+      display: none;
+    }
+    .aside{
+        display: none;
+    }
+    .logo{
+        display: none;
+    }
+    .redes{
+        display: none;
+    }
+}

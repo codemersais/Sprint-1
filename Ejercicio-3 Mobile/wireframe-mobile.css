@@ -1,0 +1,129 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+body{
+    max-width:1200px;
+    margin: auto;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+    .header{
+        background: #000;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+            .menu{
+                background: #F1D00A;
+                display: flex;
+                flex-flow: row nowrap;
+            }
+            .logo{
+                background:#FF5C8D;
+                flex: 1 1 auto;
+                height: 25px;
+            }
+            .inicio{
+                background:#FF5C8D;
+                flex: 3 1 auto;
+                height: 25px;
+            }
+            .contacto{
+                background:#FF5C8D;
+                flex: 1 1 auto;
+                height: 25px;
+            }
+            .texto-principal{
+                background: #F76E11;
+            }
+            h1{
+                background: #FFFDA2;
+            }
+
+
+    .section{
+        background: #000;
+        display: flex;
+    }
+        .articulos{
+            background: #35858B;
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+        }
+            .article{
+                background: #4FBDBA;
+                flex: 1 1 40%;
+            }
+
+            .navegacion{
+                background: #AEFEFF;
+                flex: 1 1 100%;
+            }
+        .aside{
+            background: #6A5495;
+            flex: 1 1 auto;
+        }
+            .publicidad{
+                background: #8BDB81;
+            }
+    .footer{
+        background: #000;
+    }
+        .pie{
+            background: #E7ED9B;
+        }
+
+@media (max-width: 600px){
+    .header{
+        padding: 25;
+        background: #000;
+        
+    }
+    .menu{
+        flex-direction: column;
+        padding: 20px;
+        margin: 20px;
+    }
+    .texto-principal{
+         margin: 20px;
+    }
+    .titulo{
+        margin: 15px; 
+        padding: 15px;
+    }
+    .section{
+        flex-direction: column;
+        margin-bottom: 15px;
+    }
+    .articulos{
+        flex-direction: column;
+        margin: 20px;
+    }
+    .article{
+        margin: 15px;
+        padding: 15px;
+    }
+    .navegacion{
+        margin: 15px;
+        padding: 15px;
+    }
+    .aside{
+        flex-direction: column;
+        margin: 20px;
+    }
+    .publicidad{
+        margin: 15px;
+        padding: 15px;
+    }
+    .footer{padding: 15px;
+    }
+    .pie{
+        margin: 20px;
+        padding: 15px;
+    }
+}

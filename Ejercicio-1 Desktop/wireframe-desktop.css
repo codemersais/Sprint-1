@@ -1,0 +1,79 @@
+*{
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+}
+body{
+    max-width:1200px;
+    margin: auto;
+}
+.padre{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+    .header{
+        background: #000;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+            .menu{
+                background: #F1D00A;
+                display: flex;
+                flex-flow: row nowrap;
+            }
+            .logo{
+                background:#FF5C8D;
+                flex: 1 1 auto;
+                height: 25px;
+            }
+            .inicio{
+                background:#FF5C8D;
+                flex: 3 1 auto;
+                height: 25px;
+            }
+            .contacto{
+                background:#FF5C8D;
+                flex: 1 1 auto;
+                height: 25px;
+            }
+            .texto-principal{
+                background: #F76E11;
+            }
+            h1{
+                background: #FFFDA2;
+            }
+
+
+    .section{
+        background: #000;
+        display: flex;
+    }
+        .articulos{
+            background: #35858B;
+            flex: 2 1 auto;
+            display: flex;
+            flex-flow: row wrap;
+        }
+            .article{
+                background: #4FBDBA;
+                flex: 1 1 40%;
+            }
+
+            .navegacion{
+                background: #AEFEFF;
+                flex: 1 1 100%;
+            }
+        .aside{
+            background: #6A5495;
+            flex: 1 1 auto;
+        }
+            .publicidad{
+                background: #8BDB81;
+            }
+    .footer{
+        background: #000;
+    }
+        .pie{
+            background: #E7ED9B;
+        }
