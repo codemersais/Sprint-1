@@ -15,7 +15,7 @@ a{
     flex-flow: column nowrap;
 }
     .header{
-        background-image: url(../img/fons-capçalera.jpg);
+        background-image: url(../img/fons.jpg);
         background-position: center;
         background-attachment: contain;
         background: cover;
@@ -187,7 +187,7 @@ a{
 
     .header{
         width: 475px;
-        background-image: url(../img/fons-capçalera.jpg);
+        background-image: url(../img/fons.jpg);
     }
     .movil{
         display: flex;
