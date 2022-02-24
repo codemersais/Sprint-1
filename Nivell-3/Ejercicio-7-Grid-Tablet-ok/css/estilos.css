@@ -1,0 +1,85 @@
+.item{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+}
+
+
+
+@media (min-width: 768px) {
+
+   
+    .container{
+        display: grid;
+        width: 90%;
+        height: 95vh;
+        margin: 10px;
+        padding: 40px;
+        grid-template-columns: 25% 25% 25% 25%;    /* 4 columnas de 25% cada una */
+        grid-template-rows: 10% 15% 40% 10% 15% 10%;  /* 5 filas de 10% 20% 30% 20% 10% 10% */
+        margin: 50px;
+        padding: 70px;
+       
+    }
+    
+
+                #header{
+                    background-color: #FF5C8D;
+                    color: white;
+                    grid-row: 1;
+                    grid-column-start: 1; 
+                    grid-column-end: 2;
+                   
+                }
+                #menu{
+                    background-color: #F1D00A;
+                    grid-row: 1; 
+                    grid-column-start: 2; 
+                    grid-column-end: 5; 
+                }
+                 #hero{
+                    background-color: #F76E11;
+                    grid-row: 2; 
+                    grid-column-start: 1; 
+                    grid-column-end: 5; 
+                    margin: 0px 0px 40px 0px;
+                }
+                #main{
+                    background-color: #35858B;
+                    grid-row-start: 3;
+                    grid-row-end: 3;
+                    grid-column-start: 1; 
+                    grid-column-end: 5; 
+                }
+                #banner{
+                    background-color: #AEFEFF;
+                    grid-row-start: 4;
+                    grid-row-end: 4; 
+                    grid-column-start: 1; 
+                    grid-column-end: 5;
+                }
+                #aside{
+                    background-color: #6A5495;
+                    grid-row-start: 5;
+                    grid-row-end: 5;
+                    grid-column-start: 1;
+                    grid-column-end: 5;
+                }
+                #footer{
+                    background-color: #E7ED9B;
+                    grid-row-start: 6; 
+                    grid-row-end: 6; 
+                    grid-column-start: 1; 
+                    grid-column-end: 5; 
+                    margin: 40px 0px 0px 0px;
+                }
+
+}
+
+
+     
+
+
+       
